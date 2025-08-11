@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced forms</title>
+</head>
+<body>
+    <section>
+        <h1>ENHANCED HTML FORMS</h1>
+        <h4>States and capitals in Nigeria:</h4>
+        <ol>
+            <li>Kaduna</li>
+                <ul>
+                    <li>Kaduna</li>
+                </ul>
+            <li>Anambra</li>
+                <ul>
+                    <li>Awka</li>
+                </ul>
+            <li>Kogi</li>
+                <ul>
+                    <li>Lokoja</li>
+                </ul>
+            </ol><hr>
+    </section>
+
+    <section>
+        <table border="1">
+            <caption>Students lists:</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Admission no.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sarah Houston</td>
+                    <td>1091</td>
+                </tr>
+                <tr>
+                    <td>John Paul</td>
+                    <td>1008</td>
+                </tr>
+                <tr>
+                    <td>Andrew Peter</td>
+                    <td>1002</td>
+                </tr>
+            </tbody>
+        </table><hr>
+    </section>
+
+    <section>
+        <h3>Introduction to html Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg?si=m3emSed2DxW0DG8-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section>
+        <h3>Please fill the form below</h3>
+        <form action="submit"  autocomplete="on">
+            <fieldset>
+                <legend>Personal Information:></legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required minlength="3" placeholder="Enter your full name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your Email"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Video Rating</legend>
+                <label for="rating">Rate(1-5):</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+                <label for="comments">Comments(Optional)</label><br>
+                <textarea name="comments" id="comments" rows="4" cols="30" placeholder="Your thoughts about the video..."></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
